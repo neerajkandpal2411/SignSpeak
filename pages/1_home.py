@@ -8,7 +8,7 @@ if os.path.exists('assets/style.css'):
     with open('assets/style.css') as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-# Custom header with styled title
+# header
 st.markdown("""
 <div style='border-bottom: 3px solid #2E86AB; padding-bottom: 15px; margin-bottom: 20px;'>
     <h1 style='color: #2E4057; margin: 0; font-size: 2.5rem;'>SignSpeak - Gesture Recognition</h1>
@@ -55,7 +55,7 @@ with col2:
     </div>
     """, unsafe_allow_html=True)
 
-# Quick Navigation Cards
+# Navigation Cards
 st.markdown("---")
 st.markdown("""
 <div style='border-left: 5px solid #7B8065; padding-left: 15px; margin: 30px 0 20px 0;'>
@@ -191,7 +191,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# Try to load actual accuracy if available
+# load accuracy
 test_accuracy = "95.2%"
 if os.path.exists('assets/graphs/test_metrics.json'):
     with open('assets/graphs/test_metrics.json', 'r') as f:
@@ -262,7 +262,6 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# How It Works
 st.markdown("---")
 st.markdown("""
 <div style='border-left: 5px solid #2E4057; padding-left: 15px; margin: 30px 0 20px 0;'>
@@ -270,7 +269,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# Architecture diagram placeholder
+# Architecture diagram
 st.markdown("""
 <div style='background: #f8f9fa; padding: 30px; border-radius: 10px; text-align: center; margin-bottom: 30px;'>
     <pre style='background: #2E4057; color: #00ff00; padding: 20px; border-radius: 8px; overflow-x: auto; font-size: 0.9rem;'>
