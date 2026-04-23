@@ -11,7 +11,7 @@ if os.path.exists('assets/style.css'):
     with open('assets/style.css') as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-# Custom header with styled title
+# header
 st.markdown("""
 <div style='border-bottom: 3px solid #2E86AB; padding-bottom: 10px; margin-bottom: 20px;'>
     <h1 style='color: #2E4057; margin: 0;'>Live Gesture Recognition</h1>
@@ -19,7 +19,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# Initialize session state
+# session state
 if 'recognizer' not in st.session_state:
     # Import here to avoid duplicate layer name issues
     from inference.realtime_prediction import GestureRecognizer
@@ -34,7 +34,7 @@ if 'confidence_history' not in st.session_state:
 if 'spoken_gestures' not in st.session_state:
     st.session_state.spoken_gestures = set()
 
-# Control Panel with styled background
+# Control Panel
 st.markdown("""
 <div style='background: #f8f9fa; padding: 20px; border-radius: 10px; margin-bottom: 20px;'>
 """, unsafe_allow_html=True)
@@ -42,7 +42,6 @@ st.markdown("""
 control_col1, control_col2, control_col3 = st.columns([1, 1, 2])
 
 with control_col1:
-    # Styled button
     button_label = "Start Recognition" if not st.session_state.is_running else "Stop Recognition"
     button_type = "primary" if not st.session_state.is_running else "secondary"
     
@@ -52,7 +51,6 @@ with control_col1:
             # Clear spoken gestures set when stopping
             st.session_state.spoken_gestures.clear()
         else:
-            # Only reinitialize if starting fresh
             if len(st.session_state.prediction_history) == 0:
                 from inference.realtime_prediction import GestureRecognizer
                 st.session_state.recognizer = GestureRecognizer(
@@ -134,12 +132,11 @@ with main_col1:
                     2
                 )
                 
-                # Add confidence bar
+                # confidence bar
                 bar_width = int(prediction_info['confidence'] * 200)
                 cv2.rectangle(processed_frame, (10, 50), (10 + bar_width, 65), color, -1)
                 cv2.rectangle(processed_frame, (10, 50), (210, 65), (255, 255, 255), 1)
             
-            # Convert to RGB for Streamlit
             processed_frame_rgb = cv2.cvtColor(processed_frame, cv2.COLOR_BGR2RGB)
             camera_placeholder.image(processed_frame_rgb, channels="RGB", use_column_width=True)
             
@@ -152,7 +149,7 @@ with main_col1:
                 })
                 st.session_state.confidence_history.append(prediction_info['confidence'])
                 
-                # Speak if enabled (only once per gesture per session)
+                # Speak if enabled
                 if voice_enabled and prediction_info['speak']:
                     gesture_key = prediction_info['gesture']
                     if gesture_key not in st.session_state.spoken_gestures:
@@ -269,7 +266,7 @@ with main_col2:
             }
         )
         
-        # Clear history button
+        # Clear history
         if st.button("Clear History", use_container_width=True):
             st.session_state.prediction_history.clear()
             st.session_state.confidence_history.clear()
