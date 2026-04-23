@@ -1,0 +1,55 @@
+{
+  "friend": {
+    "total_files": 30,
+    "valid_files": 30,
+    "samples": 30
+  },
+  "hello": {
+    "total_files": 30,
+    "valid_files": 30,
+    "samples": 30
+  },
+  "help": {
+    "total_files": 30,
+    "valid_files": 30,
+    "samples": 30
+  },
+  "i love you": {
+    "total_files": 30,
+    "valid_files": 30,
+    "samples": 30
+  },
+  "no": {
+    "total_files": 30,
+    "valid_files": 30,
+    "samples": 30
+  },
+  "same": {
+    "total_files": 30,
+    "valid_files": 30,
+    "samples": 30
+  },
+  "stop": {
+    "total_files": 30,
+    "valid_files": 30,
+    "samples": 30
+  },
+  "thank you": {
+    "total_files": 30,
+    "valid_files": 30,
+    "samples": 30
+  },
+  "time": {
+    "total_files": 30,
+    "valid_files": 30,
+    "samples": 30
+  },
+  "yes": {
+    "total_files": 30,
+    "valid_files": 30,
+    "samples": 30
+  },
+  "total_samples": 300,
+  "gesture_classes": 10,
+  "sequence_length": 30
+}

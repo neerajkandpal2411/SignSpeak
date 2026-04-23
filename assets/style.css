@@ -1,0 +1,251 @@
+/* Global App Background */
+.stApp {
+    background-color: #FFFFFF;
+}
+
+/* Main content area */
+.main {
+    background-color: #FFFFFF;
+}
+
+/* Headers - Dark Purple with White Text */
+h1, h2, h3, h4, h5, h6 {
+    color: #4A235A !important;
+    font-weight: 600 !important;
+}
+
+/* Paragraphs and general text - Dark Gray for readability */
+p, li, .stMarkdown, .stText {
+    color: #2C3E50 !important;
+}
+
+/* Sidebar - Dark Purple Background */
+.stSidebar {
+    background: linear-gradient(180deg, #4A235A 0%, #2C1338 100%) !important;
+}
+
+/* Sidebar Headers - White */
+.stSidebar h1, .stSidebar h2, .stSidebar h3, .stSidebar h4 {
+    color: #FFFFFF !important;
+}
+
+/* Sidebar Text - Light Purple */
+.stSidebar p, .stSidebar li, .stSidebar .stMarkdown, .stSidebar span {
+    color: #D2B4DE !important;
+}
+
+/* Sidebar Links */
+.stSidebar a {
+    color: #D2B4DE !important;
+}
+
+.stSidebar a:hover {
+    color: #FFFFFF !important;
+}
+
+/* Buttons - Purple with White Text */
+.stButton > button {
+    background-color: #8E44AD !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 8px !important;
+    font-weight: 500 !important;
+    transition: all 0.3s ease !important;
+}
+
+.stButton > button:hover {
+    background-color: #6C3483 !important;
+    box-shadow: 0 4px 8px rgba(142, 68, 173, 0.3) !important;
+}
+
+/* Primary Button */
+.stButton > button[kind="primary"] {
+    background-color: #8E44AD !important;
+    color: #FFFFFF !important;
+}
+
+/* Secondary Button */
+.stButton > button[kind="secondary"] {
+    background-color: #F5EEF8 !important;
+    color: #4A235A !important;
+    border: 1px solid #8E44AD !important;
+}
+
+/* Metrics Cards - Purple Gradient with White Text */
+[data-testid="stMetric"] {
+    background: linear-gradient(135deg, #8E44AD 0%, #6C3483 100%) !important;
+    padding: 1rem !important;
+    border-radius: 10px !important;
+}
+
+[data-testid="stMetric"] label {
+    color: #F5EEF8 !important;
+    font-weight: 500 !important;
+}
+
+[data-testid="stMetricValue"] {
+    color: #FFFFFF !important;
+    font-weight: 700 !important;
+}
+
+[data-testid="stMetricDelta"] {
+    color: #D2B4DE !important;
+}
+
+/* DataFrames - Light Purple Background with Dark Text */
+.stDataFrame {
+    background-color: #F5EEF8 !important;
+    border: 1px solid #D2B4DE !important;
+    border-radius: 8px !important;
+}
+
+.stDataFrame th {
+    background-color: #8E44AD !important;
+    color: #FFFFFF !important;
+}
+
+.stDataFrame td {
+    color: #2C3E50 !important;
+}
+
+/* Expander - Light Purple Background */
+.streamlit-expanderHeader {
+    background-color: #F5EEF8 !important;
+    border: 1px solid #D2B4DE !important;
+    border-radius: 8px !important;
+    color: #4A235A !important;
+    font-weight: 500 !important;
+}
+
+.streamlit-expanderContent {
+    background-color: #F5EEF8 !important;
+    border: 1px solid #D2B4DE !important;
+    border-top: none !important;
+    border-radius: 0 0 8px 8px !important;
+}
+
+/* Info Boxes */
+.stAlert {
+    border-radius: 8px !important;
+}
+
+.stAlert[kind="info"] {
+    background-color: #F5EEF8 !important;
+    border-left: 5px solid #8E44AD !important;
+    color: #4A235A !important;
+}
+
+.stAlert[kind="success"] {
+    background-color: #D5F5E3 !important;
+    border-left: 5px solid #8E44AD !important;
+    color: #145A32 !important;
+}
+
+.stAlert[kind="warning"] {
+    background-color: #FDEBD0 !important;
+    border-left: 5px solid #F39C12 !important;
+    color: #7E5109 !important;
+}
+
+.stAlert[kind="error"] {
+    background-color: #FADBD8 !important;
+    border-left: 5px solid #E74C3C !important;
+    color: #922B21 !important;
+}
+
+/* Select Box, Slider, Checkbox */
+.stSelectbox, .stSlider, .stCheckbox {
+    color: #4A235A !important;
+}
+
+/* Progress Bar */
+.stProgress > div > div {
+    background-color: #8E44AD !important;
+}
+
+/* Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    background-color: #F5EEF8 !important;
+    border-radius: 8px !important;
+}
+
+.stTabs [data-baseweb="tab"] {
+    color: #4A235A !important;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: #8E44AD !important;
+    color: #FFFFFF !important;
+}
+
+/* Input Fields */
+.stTextInput input, .stTextArea textarea {
+    border: 1px solid #D2B4DE !important;
+    border-radius: 8px !important;
+}
+
+.stTextInput input:focus, .stTextArea textarea:focus {
+    border-color: #8E44AD !important;
+    box-shadow: 0 0 0 2px rgba(142, 68, 173, 0.2) !important;
+}
+
+/* Radio Buttons */
+.stRadio label {
+    color: #4A235A !important;
+}
+
+/* Code Blocks */
+code, pre {
+    background-color: #F5EEF8 !important;
+    color: #4A235A !important;
+    border: 1px solid #D2B4DE !important;
+    border-radius: 5px !important;
+}
+
+/* Links in main content */
+a {
+    color: #8E44AD !important;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: #6C3483 !important;
+    text-decoration: underline !important;
+}
+
+/* Divider */
+hr {
+    border-color: #D2B4DE !important;
+}
+
+/* Custom card backgrounds with light purple */
+div[style*="background: #f8f9fa"] {
+    background-color: #F5EEF8 !important;
+    border: 1px solid #D2B4DE !important;
+    border-radius: 10px !important;
+}
+
+/* Custom card headers - Dark Purple with White Text */
+div[style*="background: #f8f9fa"] h4 {
+    color: #4A235A !important;
+}
+
+/* Gradient hero sections - Keep Dark Purple with White Text */
+div[style*="background: linear-gradient"] {
+    background: linear-gradient(135deg, #6C3483 0%, #4A235A 100%) !important;
+}
+
+div[style*="background: linear-gradient"] h2,
+div[style*="background: linear-gradient"] p {
+    color: #FFFFFF !important;
+}
+
+/* Left border accents - Purple */
+div[style*="border-left: 5px solid"] {
+    border-left-color: #8E44AD !important;
+}
+
+/* Bottom borders */
+div[style*="border-bottom: 3px solid"] {
+    border-bottom-color: #8E44AD !important;
+}
