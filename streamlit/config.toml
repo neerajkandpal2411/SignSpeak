@@ -1,0 +1,16 @@
+[theme]
+primaryColor = "#8E44AD"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F5EEF8"
+textColor = "#4A235A"
+font = "sans serif"
+
+[server]
+maxUploadSize = 10
+enableXsrfProtection = true
+enableCORS = false
+
+[browser]
+gatherUsageStats = false
+serverAddress = "localhost"
+serverPort = 8501
